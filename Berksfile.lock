@@ -1,0 +1,7 @@
+DEPENDENCIES
+  mongo
+    git: git@github.com:Saraabd7/MongoCookbookStarterCode.git
+    revision: 8aba26c5e6553604c4b678fba511cd53d196423e
+
+GRAPH
+  mongo (0.1.0)
