@@ -1,4 +1,4 @@
-### MonoDB-Packer
+### MongoDB-Packer 💻
 
 ## Packer
 • Packer is used to creating immutable images of our machines. packer has been used to create an AMI in AWS. The configuration of this specified in the packer.json.
@@ -8,9 +8,11 @@
 
 • After Packer is installed, create first template, which tells Packer what platforms to build images for and how you want to build them. create a file ``` touch packer-mongo.json ```. Export  AWS credentials as the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables.
 
-Give an name to AMI by editing packer.json file.
+• Give an name to AMI by editing packer.json file:
 
-``` "ami_name": "<NAME>-{{timestamp}}"
+```
+ "ami_name": "<NAME>-{{timestamp}}"
+
 ```
 ## Creating an image (Building)
 • To create an image for MongoCookbookStarterCode in the command line type:
@@ -40,11 +42,17 @@ Other than the prerequisites, there is nothing to install. The script will insta
 
 • Berksfile contains the chef supermarket and the metadata and is used to manage the dependencies of the cookbook and a berks-cookbooks berks vendor
 
-``` berks vendor
+```
+berks vendor
+
 ```
 
 ## Pre-requisites.
-Git
-Packer
-Chef
-oh my zssh
+
+1. Git
+
+2. Packer
+
+3. Chef
+
+4. oh my zssh
